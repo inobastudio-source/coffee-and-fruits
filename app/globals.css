@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-cookie: "Cookie", cursive;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  span {
+    font-family: var(--font-cookie);
+  }
+}
+
+@layer utilities {
+  .paddingX {
+    @apply px-36 lg:px-40 md:px-16 sm:px-8 max-sm:px-8;
+  }
+}
